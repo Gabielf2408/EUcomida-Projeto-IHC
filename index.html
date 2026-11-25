@@ -1,0 +1,639 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EUcomida | Projeto de IHC</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+
+    <!-- CSS próprio -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="bi bi-egg-fried"></i> EUcomida
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal"
+                aria-expanded="false"
+                aria-label="Abrir menu de navegação">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Início</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#etapas">Etapas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#prototipo">Protótipo</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light btn-sm ms-lg-3 mt-2 mt-lg-0"
+                            id="btnTema">
+                            <i class="bi bi-moon-stars-fill"></i> Tema
+                        </button>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- INÍCIO -->
+    <section id="home">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <span class="badge bg-warning text-dark mb-3">
+                    Projeto de Interface Humano-Computador
+                </span>
+
+                <h1 class="display-4 fw-bold">
+                    Bem-vindo ao <span class="destaque">EUcomida!</span>
+                </h1>
+
+                <p class="lead mt-3">
+                    Uma plataforma pensada para facilitar a busca por alimentos,
+                    considerando diferentes necessidades e preferências alimentares.
+                </p>
+
+                <p class="text-muted mt-4">
+                    <i class="bi bi-clock"></i>
+                    Horário de acesso:
+                    <span id="relogio" class="fw-bold">00:00:00</span>
+                </p>
+
+                <a href="#sobre" class="btn btn-principal mt-3">
+                    Conheça o projeto
+                    <i class="bi bi-arrow-down"></i>
+                </a>
+
+            </div>
+
+            <!-- IMAGEM PRINCIPAL -->
+            <div class="imagem-destaque">
+                <!-- Inserir imagem principal do projeto posteriormente -->
+                <img src="eucomida_logo.png"
+                alt="Apresentação do projeto EUcomida"
+                class="img-projeto">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SOBRE -->
+    <section id="sobre" class="bg-light">
+
+        <div class="container">
+
+            <h2 class="text-center mb-5">Sobre o projeto</h2>
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-md-6">
+
+                    <h3>O que é o EUcomida?</h3>
+
+                    <p>
+                        O EUcomida é um projeto desenvolvido na disciplina
+                        de Interface Humano-Computador (IHC), com a proposta
+                        de facilitar a busca e a escolha de alimentos.
+                    </p>
+
+                    <p>
+                        A plataforma considera pessoas com restrições alimentares
+                        e também aquelas que desejam conhecer novas opções de comidas.
+                    </p>
+
+                    <p>
+                        O desenvolvimento do projeto utiliza conceitos de
+                        Design Thinking, buscando compreender as necessidades
+                        dos usuários e desenvolver uma solução adequada.
+                    </p>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <img src="screen.png"
+                    alt="Apresentação do projeto EUcomida"
+                    class="img-projeto">
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ETAPAS DO DESIGN THINKING -->
+    <section id="etapas">
+
+        <div class="container">
+
+            <h2 class="text-center mb-3">Processo de Design Thinking</h2>
+
+            <p class="text-center text-muted mb-5">
+                Conheça as etapas utilizadas no desenvolvimento do EUcomida.
+            </p>
+
+            <div class="row g-4">
+
+                <!-- ETAPA 1 -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card etapa-card h-100 shadow-sm">
+
+                        <div class="card-body">
+
+                            <div class="icone-card">
+                                <i class="bi bi-people"></i>
+                            </div>
+
+                            <span class="numero-etapa">ETAPA 01</span>
+
+                            <h4>Empatia</h4>
+
+                            <p>
+                                Identificação do problema e compreensão
+                                das necessidades dos usuários.
+                            </p>
+
+                            <ul>
+                                <li>Escolha do problema</li>
+                                <li>Pesquisa com usuários</li>
+                            </ul>
+
+                            <a href="#etapa1" class="btn btn-principal">
+                                Ver etapa
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ETAPA 2 -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card etapa-card h-100 shadow-sm">
+
+                        <div class="card-body">
+
+                            <div class="icone-card">
+                                <i class="bi bi-bullseye"></i>
+                            </div>
+
+                            <span class="numero-etapa">ETAPA 02</span>
+
+                            <h4>Definição</h4>
+
+                            <p>
+                                Organização das informações e definição
+                                do problema que será resolvido.
+                            </p>
+
+                            <ul>
+                                <li>Objetivo e Matriz CSD</li>
+                                <li>Problema identificado</li>
+                                <li>Personas e jornada</li>
+                            </ul>
+
+                            <a href="#etapa2" class="btn btn-principal">
+                                Ver etapa
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ETAPA 3 -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card etapa-card h-100 shadow-sm">
+
+                        <div class="card-body">
+
+                            <div class="icone-card">
+                                <i class="bi bi-lightbulb"></i>
+                            </div>
+
+                            <span class="numero-etapa">ETAPA 03</span>
+
+                            <h4>Ideação</h4>
+
+                            <p>
+                                Desenvolvimento de ideias e organização
+                                das funcionalidades da solução.
+                            </p>
+
+                            <ul>
+                                <li>Crazy 8</li>
+                                <li>Plano de ação</li>
+                                <li>Fluxo de tarefas</li>
+                            </ul>
+
+                            <a href="#etapa3" class="btn btn-principal">
+                                Ver etapa
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ETAPA 4 -->
+                <div class="col-md-6 col-lg-6">
+
+                    <div class="card etapa-card h-100 shadow-sm">
+
+                        <div class="card-body">
+
+                            <div class="icone-card">
+                                <i class="bi bi-window"></i>
+                            </div>
+
+                            <span class="numero-etapa">ETAPA 04</span>
+
+                            <h4>Prototipação</h4>
+
+                            <p>
+                                Construção e apresentação dos protótipos
+                                de baixa ou média fidelidade.
+                            </p>
+
+                            <a href="#prototipo" class="btn btn-principal">
+                                Ver etapa
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ETAPA 5 -->
+                <div class="col-md-6 col-lg-6">
+
+                    <div class="card etapa-card h-100 shadow-sm">
+
+                        <div class="card-body">
+
+                            <div class="icone-card">
+                                <i class="bi bi-check-circle"></i>
+                            </div>
+
+                            <span class="numero-etapa">ETAPA 05</span>
+
+                            <h4>Teste</h4>
+
+                            <p>
+                                Avaliação da usabilidade, análise dos resultados
+                                e aplicação de recursos de acessibilidade.
+                            </p>
+
+                            <a href="#etapa5" class="btn btn-principal">
+                                Ver etapa
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CONTEÚDO DAS ETAPAS -->
+    <section id="detalhes-etapas" class="bg-light">
+
+        <div class="container">
+
+            <h2 class="text-center mb-5">Desenvolvimento do projeto</h2>
+
+
+            <!-- ETAPA 1 -->
+            <div id="etapa1" class="conteudo-etapa">
+
+                <span class="numero-etapa">ETAPA 01</span>
+
+                <h3>Empatia – Escolha do problema</h3>
+
+                <p>
+                    Nesta etapa, foi identificado o problema que motivou
+                    o desenvolvimento do EUcomida, considerando as dificuldades
+                    enfrentadas pelos usuários na busca por alimentos.
+                </p>
+
+                <h4>Pesquisa com usuários</h4>
+
+                <p>
+                    Espaço destinado à apresentação das pesquisas realizadas
+                    para compreender as necessidades dos usuários.
+                </p>
+
+                <img src="Pesquisa-usuario.png"
+                alt="Apresentação do projeto EUcomida"
+                class="img-projeto">
+
+            </div>
+
+
+            <hr class="my-5">
+
+
+            <!-- ETAPA 2 -->
+            <div id="etapa2" class="conteudo-etapa">
+
+                <span class="numero-etapa">ETAPA 02</span>
+
+                <h3>Definição – Objetivo e Matriz CSD</h3>
+
+                <p>
+                    Apresentação do objetivo do projeto e da Matriz CSD,
+                    organizando certezas, suposições e dúvidas identificadas.
+                </p>
+
+                <img src="matrizcsd.png"
+                alt="Apresentação do projeto EUcomida"
+                class="img-projeto">
+
+                <h4 class="mt-4">Definição do problema</h4>
+
+                <p>
+                    Espaço destinado à descrição do problema definido
+                    para orientar o desenvolvimento da solução.
+                </p>
+
+                <div class="row g-4 mt-2">
+
+                    <div class="col-md-6">
+
+                        <h4>Personas</h4>
+
+                        <img src="persona.png"
+                        alt="Apresentação do projeto EUcomida"
+                        class="img-projeto">
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <h4>Jornada do usuário</h4>
+
+                        <img src="jornada-usuario.png"
+                alt="Apresentação do projeto EUcomida"
+                class="img-projeto">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <hr class="my-5">
+
+
+            <!-- ETAPA 3 -->
+            <div id="etapa3" class="conteudo-etapa">
+
+                <span class="numero-etapa">ETAPA 03</span>
+
+                <h3>Ideação – Crazy 8 e Plano de Ação</h3>
+
+                <p>
+                    Apresentação das ideias desenvolvidas e das atividades
+                    planejadas para transformar as propostas em uma solução.
+                </p>
+
+                <div class="row g-4 mt-2">
+
+                    <div class="col-md-6">
+
+                        <h4>Crazy 8</h4>
+
+                        <img src="crazy-8.png"
+                alt="Apresentação do projeto EUcomida"
+                class="img-projeto">
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <h4>Plano de ação</h4>
+
+                        <img src="planodeação.png"
+                alt="Apresentação do projeto EUcomida"
+                class="img-projeto">
+
+                    </div>
+
+                </div>
+
+                <h4 class="mt-5">Fluxo de tarefas</h4>
+
+                <p>
+                    Organização da sequência de ações realizadas pelo usuário
+                    e identificação das telas necessárias para o aplicativo.
+                </p>
+
+                <img src="fluxo-tarefa.png"
+                alt="Apresentação do projeto EUcomida"
+                class="img-projeto">
+
+            </div>
+
+
+            <hr class="my-5">
+
+
+            <!-- ETAPA 4 -->
+            <div id="etapa4" class="conteudo-etapa">
+
+                <span class="numero-etapa">ETAPA 04</span>
+
+                <h3>Prototipação</h3>
+
+                <p>
+                    Apresentação dos protótipos desenvolvidos para representar
+                    a interface e as funcionalidades propostas para o EUcomida.
+                </p>
+
+                <img src="screen2.png"
+                alt="Apresentação do projeto EUcomida"
+                class="img-projeto">
+
+            </div>
+
+
+            <hr class="my-5">
+
+
+            <!-- ETAPA 5 -->
+            <div id="etapa5" class="conteudo-etapa">
+
+                <span class="numero-etapa">ETAPA 05</span>
+
+                <h3>Teste – Teste de usabilidade</h3>
+
+                <p>
+                    Espaço destinado à apresentação dos testes realizados
+                    com usuários para avaliar a facilidade de utilização
+                    e identificar possíveis dificuldades.
+                </p>
+
+                <h4>Análise dos resultados</h4>
+
+                <img src="resultadoTeste.png"
+                alt="resultados do teste"
+                class="img-projeto">
+
+                <h4 class="mt-4">Acessibilidade</h4>
+
+                <p>
+                    Apresentação dos recursos de acessibilidade considerados
+                    no desenvolvimento da interface.
+                </p>
+
+                <img src="acessibilidade.png"
+                alt="Apresentação do projeto EUcomida"
+                class="img-projeto">
+
+            </div>
+
+
+            <hr class="my-5">
+
+
+            <!-- CONSIDERAÇÕES FINAIS -->
+            <div id="consideracoes" class="conteudo-etapa">
+
+                <h3>Considerações finais</h3>
+
+                <p>
+                    Espaço destinado às considerações finais sobre o
+                    desenvolvimento do EUcomida, os resultados alcançados
+                    e os aprendizados obtidos durante o projeto.
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- PROTÓTIPO -->
+    <section id="prototipo">
+
+        <div class="container text-center">
+
+            <h2>Protótipo do projeto</h2>
+
+            <p class="text-muted mb-4">
+                Confira a representação visual da plataforma EUcomida.
+            </p>
+
+            <img src="screen4.png"
+                alt="Apresentação do projeto EUcomida"
+                class="img-projeto">
+
+            <!-- Substituir # pelo link real do protótipo -->
+            <a href="https://stitch.google.com/projects/3518367427345204389" target="_blank" rel="noopener noreferrer"
+                class="btn btn-principal">
+                Acessar protótipo
+                <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- CONTATO / MIRO -->
+    <section id="contato" class="bg-light">
+
+        <div class="container text-center">
+
+            <h2>Materiais do projeto</h2>
+
+            <p class="text-muted mb-4">
+                Acesse os materiais utilizados durante o desenvolvimento.
+            </p>
+
+            <a href="https://miro.com/app/board/uXjVG-cEy7o=/?share_link_id=826494393580" target="_blank" rel="noopener noreferrer"
+                class="btn btn-principal m-2">
+                <i class="bi bi-easel"></i> Acessar MIRO
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- RODAPÉ -->
+    <footer class="text-white text-center py-4">
+
+        <div class="container">
+
+            <h5 class="fw-bold">EUcomida</h5>
+
+            <p>Projeto desenvolvido na disciplina de Interface Humano-Computador.</p>
+
+            <p>IFPR - Campus Palmas</p>
+
+            <p class="mb-0">
+                © 2026 - Projeto acadêmico
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript próprio -->
+    <script src="index.js"></script>
+
+</body>
+</html>
